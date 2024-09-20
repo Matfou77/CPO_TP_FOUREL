@@ -28,11 +28,13 @@ public class Calculator {
         int operande2;
        Scanner sc = new Scanner(System.in);
         operateur=sc.nextInt();
-        while (operateur < 1 || operateur > 5)
+        while (operateur < 1 || operateur > 5){
+            Scanner sc2 = new Scanner(System.in);
+            operateur = sc2.nextInt();
+        }
             
-        
-        Scanner sc1 = new Scanner(System.in);
         System.out.println("Please enter the first number :");
+        Scanner sc1 = new Scanner(System.in);
         operande1=sc1.nextInt();
         
         Scanner sc2 = new Scanner(System.in);
