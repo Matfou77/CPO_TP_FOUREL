@@ -24,13 +24,17 @@ public class Calculator {
        System.out.println("5) modulo");
        
         int operateur;
-       Scanner sc = new Scanner(System.in);
-        operateur=sc.nextInt(); 
         int operande1;
+        int operande2;
+       Scanner sc = new Scanner(System.in);
+        operateur=sc.nextInt();
+        while (operateur < 1 || operateur > 5)
+            
+        
         Scanner sc1 = new Scanner(System.in);
         System.out.println("Please enter the first number :");
         operande1=sc1.nextInt();
-         int operande2;
+        
         Scanner sc2 = new Scanner(System.in);
         System.out.println("Please enter the second number :");
         operande2=sc2.nextInt();
