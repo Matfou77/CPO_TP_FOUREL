@@ -14,19 +14,24 @@ public class TP2_Bieres_FOUREL {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    BouteilleBiere uneBiere = new BouteilleBiere() ;
-    uneBiere.nom = "Cuvee des trolls";
-    uneBiere.degreAlcool = (float) 7.0 ;
-    uneBiere.brasserie="Dubuisson";
-    uneBiere.ouverte=false;
+    BouteilleBiere uneBiere = new BouteilleBiere("Cuvee des trolls",7.0,"Dubuisson") ;
     uneBiere.lireEtiquette();
-    BouteilleBiere uneSecondeBiere = new BouteilleBiere() ;
-    uneSecondeBiere.nom = "Leffe";
-    uneSecondeBiere.degreAlcool = (float) 6.6 ;
-    uneSecondeBiere.brasserie="Abbaye de Leffe";
-    uneSecondeBiere.ouverte=false;
+    BouteilleBiere uneSecondeBiere = new BouteilleBiere("Leffe",6.6,"Abbaye de Leffe") ;
     uneSecondeBiere.lireEtiquette();
+    BouteilleBiere uneTroisiemeBiere = new BouteilleBiere("Despe",10.0,"Carrefour") ;
+    uneTroisiemeBiere.lireEtiquette();
+    BouteilleBiere uneQuatriemeBiere = new BouteilleBiere("86",8.0,"Louvre") ;
+    uneQuatriemeBiere.lireEtiquette();
+    BouteilleBiere uneCinquiemeBiere = new BouteilleBiere("Corona",15.0,"MaisonBlanche") ;
+    uneCinquiemeBiere.lireEtiquette();
     
+    System.out.println(uneBiere);
+    uneBiere.decapsuler();
+    System.out.println(uneBiere);
+    System.out.println(uneSecondeBiere);
+    System.out.println(uneTroisiemeBiere);
+    System.out.println(uneQuatriemeBiere);
+    System.out.println(uneCinquiemeBiere);
 
     }
     
