@@ -9,27 +9,26 @@ package tp3_heroic_fantasy_fourel;
  *
  * @author foure
  */
-public abstract class Arme {
+public abstract class Personnage {
     private String nom;
-    private int NVattaque;
-    public Arme(String nom , int NVattaque) {
+    private int NVvie;
+    public Personnage(String nom , int NVvie) {
     this.nom = nom ;
-    if (NVattaque < 0) this.NVattaque = 0;
-    else this.NVattaque = NVattaque;
+    this.NVvie = NVvie;
     }
 
     public String getNom() {
         return nom;
     }
 
-    public int getNVattaque() {
-        return NVattaque;
+    public int getNVvie() {
+        return NVvie;
     }
 
     @Override
     public String toString() {
-        return "Arme{" + "nom=" + nom + ", NVattaque=" + NVattaque + '}';
+        return "Personnage{" + "nom=" + nom + ", NVvie=" + NVvie + '}';
     }
     
-    
+
 }

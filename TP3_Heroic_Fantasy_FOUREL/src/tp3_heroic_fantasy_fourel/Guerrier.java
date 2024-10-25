@@ -9,17 +9,14 @@ package tp3_heroic_fantasy_fourel;
  *
  * @author foure
  */
-public class Baton extends Arme {
-    private int age ;
-    public Baton(String nom, int age, int NVattaque) {
-        super(nom, NVattaque);
-        if (age<100) this.age = age ;
-        else this.age = 0 ;
+public class Guerrier extends Personnage{
+    private boolean cheval;
+    public Guerrier(String nom, int NVvie, boolean cheval) {
+        super(nom, NVvie);
+        this.cheval = cheval;
     }
-
-    public int getAge() {
-        return age;
+    public void setCheval(boolean cheval) {
+        this.cheval = cheval;
     }
-    
     
 }
