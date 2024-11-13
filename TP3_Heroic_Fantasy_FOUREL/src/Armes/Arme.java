@@ -1,5 +1,7 @@
 package Armes;
 
+import Personnage.Personnage;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -10,12 +12,17 @@ package Armes;
  * @author foure
  */
 public abstract class Arme {
-    private String nom;
-    private int NVattaque;
+    String nom;
+    int NVattaque;
+    Personnage Proprietaire = null;
     public Arme(String nom , int NVattaque) {
     this.nom = nom ;
     if (NVattaque < 0) this.NVattaque = 0;
     else this.NVattaque = NVattaque;
+    }
+
+    public Personnage getProprietaire() {
+        return Proprietaire;
     }
 
     public String getNom() {

@@ -22,6 +22,11 @@ public class Epee extends Arme {
     public int getFinesse() {
         return finesse;
     }
+
+    @Override
+    public String toString() {
+        return "" + nom + "{" + "finesse=" + finesse + " ,NVattaque=" + NVattaque +'}';
+    }
     
     
 }
