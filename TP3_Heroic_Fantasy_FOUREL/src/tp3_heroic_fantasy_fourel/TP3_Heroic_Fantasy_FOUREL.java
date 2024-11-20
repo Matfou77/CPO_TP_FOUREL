@@ -63,14 +63,23 @@ public class TP3_Heroic_Fantasy_FOUREL {
         
         System.out.println(Lan);
         
-        Lan.close();
-        Lan=null;
-        Garc.close();
-        Garc=null;
+        //Lan.close();
+        //Lan=null;
+        //Garc.close();
+        //Garc=null;
         System.gc();
         System.out.println("ils y a " + Personnage.nbr_Combattants + " Combattants dans le jeu");
         System.out.println("ils y a " + Guerrier.nbr_Guerrier + " Guerriers dans le jeu");
         System.out.println("ils y a " + Magicien.nbr_Magicien + " Magiciens dans le jeu");
+        
+        //Lan.attaquer(Garc);
+        //Garc.attaquer(Lan);    
+        Lan.seFatiguer();
+        Lan.competences();
+        Garc.attaquer(Lan);
+        Lan.attaquer(Garc);
+        Lan.competences();
+        Garc.competences();
         
         }
     }
